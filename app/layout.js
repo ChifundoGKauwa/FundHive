@@ -1,5 +1,6 @@
-
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "fundHive app",
@@ -9,10 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className= "text-2xl font-semibold"
-      >
-        {children}
+      <body className="min-h-screen flex flex-col bg-gray-50">
+        <Navbar />
+        <main className="flex-1 flex flex-col items-center w-full pt-20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

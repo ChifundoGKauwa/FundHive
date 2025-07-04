@@ -1,11 +1,16 @@
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import StatsSection from "./components/StatsSection";
+import FeaturedProjects from "./components/FeaturedProjects";
+import HowItWorks from "./components/HowItWorks";
 
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid bg-red-400 grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ">
-
-      happy coding...
-      
-    </div>
+    <>
+      <HeroSection />
+      <StatsSection />
+      <FeaturedProjects />
+      <HowItWorks />
+    </>
   );
 }
